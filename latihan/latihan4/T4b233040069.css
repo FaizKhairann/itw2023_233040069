@@ -124,18 +124,18 @@ table {
 }
 
 /* style */
+
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
-    background-image: url("bgcolor.webp");
     color: #333;
-
+    background-image: url(beanstalk-dark.webp);
 }
-    
+
 .container {
     width: 800px;
+    background-color: white;
     margin: auto;
-    background-color: #fff;
 }
 
 .header {
@@ -146,62 +146,82 @@ body {
 .header .judul {
     font-size: 40px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 .header ul li {
     display: inline-block;
+   margin-top: 15px;
     margin-right: 10px;
-    margin-top: 15px;
 }
 
 .header a {
     text-decoration: none;
-    color: darkslategrey;
+    color: #444;
     padding: 3px;
+    font-family: Verdana;
 }
 
 .header a:hover {
-    background-color: skyblue;
-    color: white;
+    color: darkcyan;
 }
 
+/* content start */
 .hero {
-   height: 250px;
-   background-image: url("coding.jpg");
-   background-size: cover;
-   background-position: 0 -170px;
-   border-bottom: 5px solid cadetblue;
-   border-top: 5px solid cadetblue;
+    height: 300px;
+    background-image: url("makanan\ sehat.jpg");
+    background-size: cover;
+    background-position: 0 -100px;
+    border-top: 4px solid cadetblue;
+    border-bottom: 4px solid cadetblue;
 }
 
 .content {
-    padding: 20px
+    padding: 20px;
+
 }
 
 .content h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
+    color: #333;
+    
 }
 
 .content .penulis {
-    font-size: 11px;
-    margin-top: -5px;
+    font-size: 12px;
+    margin-top: -3px;
+    
 }
 
 .content .penulis a {
-    color: cadetblue;
+    color: lightseagreen;
     text-decoration: none;
+}
+
+.content a:hover {
+    color: white;
+    background-color: aquamarine;
 }
 
 .content p {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 15px;
+}
+/* content end */
+
+.hero2 {
+    height: 300px;
+    background-image: url(sayuran.jpg);
+    background-size: cover;
+    background-position: 0 -170px;
+    border-top: 4px solid cadetblue;
+    border-bottom: 4px solid cadetblue;
 }
 
 .footer {
     background-color: #333;
     padding: 10px;
+    margin-top: 40px;
 }
 
 .footer .copy {

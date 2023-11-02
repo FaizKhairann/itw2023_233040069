@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color:slategrey
+    }
+    div {
+        width: 150px;
+        height: 150px;
+        margin: 50px auto ;
+    }
+    .kotak1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        background-color:blueviolet;
+        margin: 50px auto;
+        position: relative;
+        /* border-bottom-left-radius: 70px;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        border-bottom-right-radius: 70px; */
+        border-radius: 50% 50% 50% 0;
+    }
+    .kotak2 {
+        background-color: indigo;
+        /* box-shadow: <x-offset> <y-offset> <blur> [size] <color>; */
+            box-shadow: 0px 0px 0 10px darkslateblue, 0px 0px 0 20px #333;
+            transition: 2s;
+            border-radius: 20%;
+            
+    }
+    .kotak2:hover {
+        border-radius: 50%;
+        transform: rotate(360deg) scale(0);
+    }
+</style>
+<body>
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+</body>
+</html> 
