@@ -32,7 +32,6 @@ h1 {
     height: 120px;
     /*overflow: hidden;*/
     border: 5px solid teal;
-    color:;
     float: left;
     margin: 10px;
     position: relative;
@@ -100,7 +99,7 @@ h1 {
 }
 
 .overlay:target img {
-    animation: zoomDanFade 1s;
+    animation: fade .2s;
     border-radius: 0%;
 }
 
@@ -127,6 +126,29 @@ h1 {
     animation: slideDownFade .5s .5s forwards;
 }
 
+.overlay:target .next, 
+.overlay:target .prev {
+    animation: fade .5s .5s forwards;
+}
+
+
+/* navigasi */
+.next, .prev {
+    width: 57px;
+    height: 93px;
+    background-image: url(../img/next.png);
+    position: absolute;
+    text-indent: -9999999999px;
+    top: 43%;
+    margin-left: 50px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(../img/previous.png);
+    margin-left: -100px;
+
+}
 
 
 /* animasi */
@@ -151,5 +173,15 @@ h1 {
     100% {
        opacity: 1; 
        margin-top: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
