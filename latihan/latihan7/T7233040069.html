@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="T7233040069.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<body>
+
+    <div class="container">
+
+        <header class="header" id="home">
+            <div class="hero">
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 2.499.000</h4>
+                <p class="item">Mouse</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 399.000</h4>
+                <p class="item">Earphone</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Razer Shop</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+
+        <section class="services" id="service">
+            <div class="service">
+                <div class="icon">🔧</div>
+                <h3>Service Center</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi qui, error quibusdam voluptatum eaque!</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">🛒</div>
+                <h3>Shop</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi qui, error quibusdam voluptatum eaque!</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">👕</div>
+                <h3>Merch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi qui, error quibusdam voluptatum eaque!</p>
+            </div>
+
+            <div class="service">
+                <div class="icon">☎️</div>
+                <h3>Support</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi qui, error quibusdam voluptatum eaque!</p>
+            </div>
+        </section>
+
+        <section class="product" id="product">
+            <h2>Product</h2>
+            <img src="img/headset1.png" alt="">
+            <img src="img/headset2.png" alt="">
+            <img src="img/mouse2.png" alt="">
+            <img src="img/keyboard1.png" alt="">
+            <img src="img/laptop.png" alt="">
+            <img src="img/earphone2.png" alt="">
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="contact-icon">
+                <a href="https://www.instagram.com/faizkhairan/"><i class='bx bxl-instagram'></i>faizkhairan</a>
+                <a href="https://github.com/FaizKhairann?tab=repositories"><i class='bx bxl-github'></i>Faizkhairann</a>
+            </div>
+        </section>
+
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav ul');
+
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
+});
+    </script>
+</body>
+</html>
